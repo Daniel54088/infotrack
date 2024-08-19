@@ -1,0 +1,10 @@
+{
+  "targets": {
+    "build": {
+      "executor": "@nx/web:webpack",
+      "options": {
+        "postcssConfig": "apps/seo-checker/postcss.config.js"
+      }
+    }
+  }
+}
