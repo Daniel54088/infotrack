@@ -93,4 +93,11 @@ The following open source techs are used in this project:
 
 ### Road map 
 
-1. Make the html file import better.
+1. Improve HTML Import Handling:
+- Currently, HTML files are embedded directly into the project due to time constraints and challenges faced with CORS issues. Initially, I attempted to fetch these HTML files using a CORS proxy deployed on Heroku (https://cryptic-headland-94862.herokuapp.com/https://infotrack-tests.infotrack.com.au/Bing/Page01.html). However, this approach was not fully successful within the limited timeframe. Moving forward, a more robust solution should be implemented to handle HTML imports via fetch, ensuring better maintainability and flexibility.
+
+2. Utilize Tailwind CSS for Rapid Development and Customization:
+- Tailwind CSS was employed to accelerate development while maintaining a high degree of flexibility and customization. Its utility-first approach allowed for quick iteration and responsive design implementation. Future enhancements may include further refinement of the UI and leveraging Tailwind's full customization capabilities
+
+3. Expand Support for Additional Search Engines:
+- The current implementation is designed with scalability in mind, allowing additional search engines to be incorporated with minimal effort. To add a new search engine, simply update the searchEnginesArray type, include the new paths, and make minor adjustments in a few targeted areas of the code. This ensures that the application can evolve as SEO needs change.
